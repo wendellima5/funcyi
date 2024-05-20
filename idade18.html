@@ -1,0 +1,15 @@
+<script>
+
+        function verificarIdade() 
+        {
+            const idade = parseInt(prompt("Insira a sua idade:"));
+            if (isNaN(idade)) 
+            return alert("Insira uma idade válida e tente novamente.");
+            
+            const mensagem = idade < 18 ? "Você é menor de idade e não pode dirigir." : "Você é maior de idade e pode dirigir.";
+            document.write(mensagem);
+        }
+        
+        verificarIdade();
+        
+        </script>
